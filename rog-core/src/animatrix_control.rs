@@ -89,7 +89,7 @@ impl AniMeWriter {
         ) {
             Ok(_) => {
                 println!(
-                    "{:?}",
+                    "Written in {:?} us",
                     std::time::Instant::now().duration_since(prev).as_micros()
                 );
             }
